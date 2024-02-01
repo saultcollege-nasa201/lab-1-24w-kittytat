@@ -4,19 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.html" >
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     
     <title>Contact</title>
 </head>
 <body>
- <div>
-    <h1> this is a linked a page </h1>
+<div class="contcol"> <!--for the entire page-->
+    <p class="dayclock" id="datetime"></p>
+    <div class="headher">
+    <h1> Contact Me!! </h1>
  </div>   
 
-<p>
+ <div class="headher">
+ <h2>
     <a href="index.html">  Home </a>
-</p>
+</h2>
+</div>
 
+<div>
+    <caption>
+        Leave me a message:
+    </caption>
+    <form action="" method="get">
+        <div class="formmat">
+          <label for="name">Enter your name:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="formmat">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="formmat">
+            <label for="email">Enter your phone number: </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+          </div>
+          <div class="formmat">
+            <label for="email">Enter your Message: </label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8"  />
+          </div>
+          <div class="formmat" >
+          <input class="subut" type="submit" value="Send" />
+        </div>
+        
+      </form>
+<br>
+<br>
+    <p>
+        Please <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+        Send a Mail</a> to me if you have any Queries. Thanks
+    </p>
     
+</div>
+
+</div>
 </body>
 </html>
