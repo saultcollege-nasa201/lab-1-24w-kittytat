@@ -43,8 +43,49 @@
             <label for="email">Enter your Message: </label>
             <input type="text" id="name" name="name" required minlength="4" maxlength="8"  />
           </div>
+          <fieldset class="formmat">
+            <legend>Do I know you?:</legend>
+          
+            <div>
+              <input type="checkbox" id="Yes" name="Yes" checked />
+              <label>Yes</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="No" name="No" />
+              <label >No</label>
+            </div>
+          </fieldset>
+          <div class="formmat">
+            <label>Add an attachment</label>
+
+<input type="file" id="attachment" name="attachment" accept="image/png, image/jpeg" />
+
+          </div>
+
+          <div lass="formmat">
+            <fieldset>
+                <legend>Do you play games?</legend>
+              
+                <div>
+                  <input type="radio" id="Yes" name="Yes" value="Yes" checked />
+                  <label>Yes</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="No" name="No" value="No" />
+                  <label>No</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="Prefer Not To Say" name="Prefer Not To Say" value="Prefer Not To Say" />
+                  <label ">Prefer Not To Say</label>
+                </div>
+              </fieldset>
+
+          </div>
           <div class="formmat" >
-            <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            <input type="reset" value="Reset" /> <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
             Submit</a>
         </div>
         
