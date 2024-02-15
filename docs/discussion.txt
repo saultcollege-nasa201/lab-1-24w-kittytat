@@ -1,0 +1,6 @@
+Why it is not safe for a server receiving form data to trust the data, even if JavaScript was used to validate the data.?
+
+*Even if JavaScript on the client side validates the form data, it can be bypassed by a user who knows how to manipulate the data. 
+*Just like you showed in class, the data can be altered in console tab of the browser or using a sneaky script. 
+*Trusting validation solely based on form data can leave the system vulnerable to attacks. Example: Cross Site Scripting (XSS).
+*Therefore, the server should always validate and sanitize the data received to ensure its integrity and security. 
