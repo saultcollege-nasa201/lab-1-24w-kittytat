@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    
+    <title>Contact</title>
+</head>
+<body>
+<div class="contcol"> <!--for the entire page-->
+    <p class="dayclock" id="datetime"></p>
+    <div class="headher">
+    <h1> Contact Me!! </h1>
+ </div>   
+
+ <div class="headher">
+ <h2>
+    <a href="index.html">  Home </a>
+</h2>
+</div>
+
+<div>
+ <form action="" name="myform" method="get">
+        <div class="formmat">
+          <label for="name">Enter your name:</label>
+          <input type="text" name="yourname" id="name" required  />
+        </div>
+        <div class="formmat">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="formmat">
+            <label for="email">Enter your phone number: </label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="formmat">
+            <label for="email">Enter your Message: </label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8"  />
+          </div>
+          <fieldset class="formmat">
+            <legend>Do I know you?:</legend>
+          
+            <div>
+              <input type="checkbox" id="Yes" name="Yes" checked />
+              <label>Yes</label>
+            </div>
+          
+            <div>
+              <input type="checkbox" id="No" name="No" />
+              <label >No</label>
+            </div>
+          </fieldset>
+          <div class="formmat">
+            <label>Add an attachment</label>
+
+<input type="file" id="attachment" name="attachment" accept="image/png, image/jpeg" />
+
+          </div>
+
+          <div lass="formmat">
+            <fieldset>
+                <legend>Do you play games?</legend>
+              
+                <div>
+                  <input type="radio" id="Yes" name="my_radio" value="Yes" >
+                  <label>Yes</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="No" name="my_radio" value="No" >
+                  <label>No</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="Prefer Not To Say" name="my_radio" value="Prefer Not To Say" >
+                  <label ">Prefer Not To Say</label>
+                </div>
+              
+              </fieldset>
+          </div>
+          <div>
+                      </div>
+          <div class="formmat" >
+            <input type="reset" value="Reset" /> <input type="submit" id="submit" name="submit" onclick="checkName(document.myform.yourname)">
+
+        <!--<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"> Submit</a> -->    
+            
+        </div>
+        
+      </form>
+
+    
+</div>
+
+</div>
+</body>
+</html>
