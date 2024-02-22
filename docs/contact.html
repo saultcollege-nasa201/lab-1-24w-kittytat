@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.html" >
+    
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     
@@ -23,13 +23,10 @@
 </div>
 
 <div>
-    <caption>
-        Leave me a message:
-    </caption>
-    <form action="" method="get">
+ <form action="" name="myform" method="get">
         <div class="formmat">
           <label for="name">Enter your name:</label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="yourname" id="name" required  />
         </div>
         <div class="formmat">
           <label for="email">Enter your email: </label>
@@ -37,7 +34,7 @@
         </div>
         <div class="formmat">
             <label for="email">Enter your phone number: </label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            <input type="tel" id="phone" name="phone" required />
           </div>
           <div class="formmat">
             <label for="email">Enter your Message: </label>
@@ -68,25 +65,29 @@
                 <legend>Do you play games?</legend>
               
                 <div>
-                  <input type="radio" id="Yes" name="Yes" value="Yes" checked />
+                  <input type="radio" id="Yes" name="my_radio" value="Yes" >
                   <label>Yes</label>
                 </div>
               
                 <div>
-                  <input type="radio" id="No" name="No" value="No" />
+                  <input type="radio" id="No" name="my_radio" value="No" >
                   <label>No</label>
                 </div>
               
                 <div>
-                  <input type="radio" id="Prefer Not To Say" name="Prefer Not To Say" value="Prefer Not To Say" />
+                  <input type="radio" id="Prefer Not To Say" name="my_radio" value="Prefer Not To Say" >
                   <label ">Prefer Not To Say</label>
                 </div>
+              
               </fieldset>
-
           </div>
+          <div>
+                      </div>
           <div class="formmat" >
-            <input type="reset" value="Reset" /> <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-            Submit</a>
+            <input type="reset" value="Reset" /> <input type="submit" id="submit" name="submit" onclick="checkName(document.myform.yourname)">
+
+        <!--<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"> Submit</a> -->    
+            
         </div>
         
       </form>
